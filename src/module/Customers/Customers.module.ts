@@ -6,6 +6,7 @@ import { CardViewCustomerComponent } from './CardViewCustomer/CardViewCustomer.c
 import { CreateCustomerComponent } from './CreateCustomer/CreateCustomer.component';
 import { RouterModule } from '@angular/router';
 import { ListViewCustomerComponent } from './ListViewCustomer/ListViewCustomer.component';
+import { CustomerRowHoverDirective } from '../../core/directive/customerRowHover.directive';
 
 @NgModule({
   imports: [
@@ -18,7 +19,8 @@ import { ListViewCustomerComponent } from './ListViewCustomer/ListViewCustomer.c
     CardViewCustomerComponent,
     ListViewCustomerComponent,
     CreateCustomerComponent,
-    CustomerTabsComponent
+    CustomerTabsComponent,
+    CustomerRowHoverDirective
   ]
 })
 export class CustomersModule { }

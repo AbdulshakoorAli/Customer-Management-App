@@ -10,7 +10,7 @@ export class CustomerService {
 
   customers: Customer[] = [
     {
-      image: 'https://example.com/customer1.jpg',
+      image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRW3CY2byKxwKBtYMu24QRhDrssH700-5UT3iCDBLiGCA&s',
       firstName: 'John',
       lastName: 'Doe',
       address: '123 Main St',
@@ -19,7 +19,7 @@ export class CustomerService {
       orderTotal: 100
     },
     {
-      image: 'https://example.com/customer2.jpg',
+      image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRW3CY2byKxwKBtYMu24QRhDrssH700-5UT3iCDBLiGCA&s',
       firstName: 'Jane',
       lastName: 'Smith',
       address: '456 Elm St',
@@ -28,7 +28,7 @@ export class CustomerService {
       orderTotal: 200
     },
     {
-      image: 'https://example.com/customer3.jpg',
+      image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRW3CY2byKxwKBtYMu24QRhDrssH700-5UT3iCDBLiGCA&s',
       firstName: 'Michael',
       lastName: 'Johnson',
       address: '789 Oak St',
@@ -37,7 +37,7 @@ export class CustomerService {
       orderTotal: 150
     },
     {
-      image: 'https://example.com/customer4.jpg',
+      image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRW3CY2byKxwKBtYMu24QRhDrssH700-5UT3iCDBLiGCA&s',
       firstName: 'Emily',
       lastName: 'Brown',
       address: '101 Pine St',
@@ -46,7 +46,7 @@ export class CustomerService {
       orderTotal: 300
     },
     {
-      image: 'https://example.com/customer5.jpg',
+      image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRW3CY2byKxwKBtYMu24QRhDrssH700-5UT3iCDBLiGCA&s',
       firstName: 'David',
       lastName: 'Wilson',
       address: '202 Maple St',
@@ -55,7 +55,7 @@ export class CustomerService {
       orderTotal: 250
     },
     {
-      image: 'https://example.com/customer6.jpg',
+      image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRW3CY2byKxwKBtYMu24QRhDrssH700-5UT3iCDBLiGCA&s',
       firstName: 'Sarah',
       lastName: 'Davis',
       address: '303 Walnut St',
