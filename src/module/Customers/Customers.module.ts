@@ -19,8 +19,7 @@ import { CustomerRowHoverDirective } from '../../core/directive/customerRowHover
     CardViewCustomerComponent,
     ListViewCustomerComponent,
     CreateCustomerComponent,
-    CustomerTabsComponent,
-    CustomerRowHoverDirective
+    CustomerRowHoverDirective,
   ]
 })
 export class CustomersModule { }

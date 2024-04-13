@@ -13,7 +13,7 @@
       </tr>
     </thead>
     <tbody>
-      <tr appCustomerRowHover *ngFor="let customer of customers; let i = index">        
+      <tr appCustomerRowHover *ngFor="let customer of customers; let i = index" (click)="navigateToCustomer(i)" >        
         <td> <img src={{customer.image}} alt="customer"> </td>
         <td> <a href="#"> {{customer.firstName}} </a> </td>
         <td> {{customer.lastName}} </td>
@@ -21,7 +21,7 @@
         <td> {{customer.city}} </td>
         <td> {{customer.state}} </td>
         <td> {{customer.orderTotal}} </td>
-        <td> <a href="#"> View Orders </a> </td>
+        <td> <a> View Orders </a> </td>
       </tr>
     </tbody>
   </table>

@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import { Customer } from '../../models/customer.interface';
+import { Subject } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
@@ -7,6 +8,27 @@ import { Customer } from '../../models/customer.interface';
 export class CustomerService {
 
   constructor() { }
+
+  private _index = new Subject<number>();
+
+  set_index(id: number) {
+    this._index.next(id);
+    this._index.subscribe((id: number) => {
+      console.log(id);
+    })
+
+  }
+
+  get_index() {
+    //    alert(this._index);
+
+    this._index.subscribe((id: number) => {
+      return id;
+    })
+
+    //    return this._index.asObservable();
+  }
+
 
   customers: Customer[] = [
     {
@@ -64,6 +86,14 @@ export class CustomerService {
       orderTotal: 180
     }
   ];
+
+  getCustomerById(id: number): Customer {
+    //    alert(id);
+    this._index.subscribe((newid: number) => {
+      console.log('new:' + newid);
+    })
+    return this.customers[0];
+  }
 
 
 }
