@@ -78,7 +78,7 @@ export class CustomerService {
     },
     {
       image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRW3CY2byKxwKBtYMu24QRhDrssH700-5UT3iCDBLiGCA&s',
-      firstName: 'Sarah',
+      firstName: 'Sarah ali',
       lastName: 'Davis',
       address: '303 Walnut St',
       city: 'Seattle',
