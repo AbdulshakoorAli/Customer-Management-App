@@ -1,3 +1,17 @@
-<p>
-  CustomerOrder works!
-</p>
+<div class="container">
+  <table class="table table-hover">
+    <thead>
+      <tr>
+        <th scope="col">Item Name</th>
+        <th scope="col">Item Price</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let order of orders; let i = index">
+        <td>{{order.name}} </td>
+        <td>${{order.amount}} </td>
+      </tr>
+    </tbody>
+  </table>
+  <p style="margin-left: 52.5%;">{{total}}</p>
+</div>

@@ -19,7 +19,7 @@ const routes: Routes = [
     path: 'customers',
     component: CustomersComponent,
     children: [
-      { path: '', redirectTo: 'list-view', pathMatch: 'full' },
+      { path: '', redirectTo: 'card-view', pathMatch: 'full' },
       { path: 'card-view', component: CardViewCustomerComponent },
       { path: 'list-view', component: ListViewCustomerComponent },
       { path: 'create', component: CreateCustomerComponent },
@@ -31,9 +31,10 @@ const routes: Routes = [
     component: CustomerComponent,
     children: [
       { path: '', redirectTo: 'customer-details', pathMatch: 'full' },
-      { path: 'customer-details', component: CustomerDetailComponent },     
-      { path: 'customer-orders', component: CustomerOrderComponent },     
-      { path: 'customer-edit', component: CustomerEditComponent },  
+      { path: 'customer-details', component: CustomerDetailComponent },
+      { path: 'customer-details/:id', component: CustomerDetailComponent },     
+      { path: 'customer-orders/:id', component: CustomerOrderComponent },     
+      { path: 'customer-edit/:id', component: CustomerEditComponent },  
     ]
   },
   { path: 'orders', component: OrdersComponent },

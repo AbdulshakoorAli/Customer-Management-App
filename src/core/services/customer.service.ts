@@ -19,17 +19,6 @@ export class CustomerService {
 
   }
 
-  get_index() {
-    //    alert(this._index);
-
-    this._index.subscribe((id: number) => {
-      return id;
-    })
-
-    //    return this._index.asObservable();
-  }
-
-
   customers: Customer[] = [
     {
       image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRW3CY2byKxwKBtYMu24QRhDrssH700-5UT3iCDBLiGCA&s',
@@ -87,13 +76,8 @@ export class CustomerService {
     }
   ];
 
-  getCustomerById(id: number): Customer {
-    //    alert(id);
-    this._index.subscribe((newid: number) => {
-      console.log('new:' + newid);
-    })
-    return this.customers[0];
+  getCustomerById(id: number): Customer {        
+    return this.customers[id];
   }
-
 
 }

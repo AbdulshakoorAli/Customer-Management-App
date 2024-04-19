@@ -18,10 +18,8 @@ export class ListViewCustomerComponent implements OnInit {
     this.customers = this.customerService.customers;
   }
 
-  navigateToCustomer(id:number) {    
-    this.customerService.set_index(id);
-    console.log(this.customerService.get_index());
-    this.router.navigate(['/customer']);
+  navigateToCustomer(id:number) {        
+    this.router.navigate(['/customer/customer-details/',id]);
   }
 
 }

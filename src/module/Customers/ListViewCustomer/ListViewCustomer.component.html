@@ -21,7 +21,7 @@
         <td> {{customer.city}} </td>
         <td> {{customer.state}} </td>
         <td> {{customer.orderTotal}} </td>
-        <td> <a> View Orders </a> </td>
+        <td> <a [routerLink]="['/customer/customer-orders',i]" > View Orders </a> </td>
       </tr>
     </tbody>
   </table>
